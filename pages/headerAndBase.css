@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@font-face {
+  font-family: "proximanova";
+  src: url("../../assets/fonts/proximanova-regular-webfont.woff");
+}
+
+:root {
+  --primary-clr: #e24131;
+  --secondary-clr: #f79425;
+  --accent-clr: #333333;
+  --accent-clr2: #707070;
+  --accent-clr3: #c1c1c1;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "proximanova", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  line-height: 1.4;
+  color: var(--accent-clr);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+p {
+  font-size: 18px;
+}
+h1 {
+  font-size: 80px;
+  position: relative;
+  z-index: 3;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+}
+
+hr {
+  background-color: #ebebeb;
+  height: 2px;
+  border-radius: 10px;
+  margin: 2em 0;
+  border: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a,
+button {
+  font-family: inherit;
+  transition: all 250ms ease-out;
+}
+
+a:hover,
+button:hover {
+  transform: scale(0.98);
+}
+
+/* ============================================ */
+
+.hero {
+  background: url("../assets/20160411-15_HON_HP1294@3x.png") center center
+    no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.246) 10%,
+    transparent 80%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  height: 100%;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.register a {
+  padding: 0.2rem 1rem;
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: inherit;
+  transition: all 250ms ease-out;
+}
+
+.register a:hover {
+  transform: scale(0.95);
+}
+
+.login-btn {
+  background-color: var(--secondary-clr);
+}
+
+.signup-btn {
+  background-color: var(--primary-clr);
+}
+
+.logo {
+  width: 160px;
+  z-index: 10;
+}
+
+.hero-title {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .register {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .register a {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  .become-partner {
+    display: none;
+  }
+}

@@ -1,0 +1,74 @@
+.hero {
+  background: url("../../assets/login&forget-img.png") center center no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.login-main {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.login-title {
+  font-family: "Montserrat";
+}
+
+.login-link,
+.forget {
+  color: var(--primary-clr);
+  text-decoration: underline;
+  display: block;
+  margin: 1rem auto;
+}
+
+label {
+  text-align: left;
+  color: var(--accent-clr2);
+}
+
+label sup {
+  color: var(--primary-clr);
+  font-size: 1.2rem;
+}
+
+.field-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 370px;
+  position: relative;
+}
+
+.field-flex input {
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px #ebebeb;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.212) inset;
+  color: var(--accent-clr2);
+}
+
+.login-btns a {
+  display: inline-block;
+  width: 180px;
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  color: #ffffff;
+  margin: 0.2rem;
+}
+
+.login-btns a:nth-child(1) {
+  background-color: var(--secondary-clr);
+}
+
+.login-btns a:nth-child(2) {
+  background-color: var(--primary-clr);
+}
