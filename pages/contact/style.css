@@ -1,0 +1,287 @@
+.hero {
+  background: url("../../assets/login&forget-img.png") center center no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.dashboard-main {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.register {
+  gap: 10px;
+  flex-direction: row;
+}
+
+.register img {
+  width: 25px;
+}
+
+.register .become-partner {
+  padding: 0;
+  display: block;
+}
+
+.become-partner {
+  position: relative;
+}
+.register .become-partner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  border-radius: 5px;
+  background-color: var(--primary-clr);
+  transition: transform 250ms ease-in-out;
+}
+
+.register .become-partner:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.main-nav {
+  background-color: var(--primary-clr);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.24);
+}
+
+.main-nav > ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav li a {
+  padding: 0;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.main-nav li {
+  position: relative;
+  padding: 1.2rem 1.5rem;
+}
+
+.main-nav li.active {
+  background-color: var(--secondary-clr);
+}
+
+.main-nav li::after {
+  content: "";
+  position: absolute;
+  bottom: 1.1rem;
+  left: 1.25rem;
+  width: calc(100% - 2.5rem);
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: transform 250ms ease-in-out;
+}
+
+.main-nav li:hover::after,
+.main-nav .active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.contact-flex {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 5rem auto;
+}
+
+.contact-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.contact-list h5 {
+  font-size: 1.2rem;
+  color: var(--primary-clr);
+  line-height: 1.5;
+}
+
+.contact-flex hr {
+  background-color: var(--primary-clr);
+  margin: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.contact-content {
+  flex-basis: 50%;
+}
+
+.contact-content h6 {
+  font-size: 0.9rem;
+}
+
+.contact-content a {
+  text-decoration: underline;
+  color: var(--primary-clr);
+}
+
+.contact-content img {
+  width: 16px;
+  padding-top: 0.3rem;
+}
+
+.email-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-form {
+  background-color: var(--primary-clr);
+  padding: 1rem 2rem 4rem;
+  border-radius: 10px;
+  color: #ffffff;
+  min-height: 400px;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.116);
+  position: relative;
+}
+
+.contact-form::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: -1.5rem;
+  left: -1.5rem;
+  background-color: var(--secondary-clr);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+label {
+  text-align: left;
+}
+
+label sup {
+  font-size: 1.2rem;
+}
+
+.field-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.input-flex:first-child {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.field-flex input,
+.field-flex textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px #ebebeb;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.212) inset;
+  color: var(--accent-clr2);
+}
+.field-flex input::placeholder,
+textarea::placeholder {
+  color: var(--accent-clr3);
+  font-family: "Montserrat";
+}
+
+.contact-btn {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.contact-submit-btn {
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  color: #ffffff;
+  margin: 0.2rem;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+
+@media screen and (max-width: 600px) {
+  .register img {
+    width: 20px;
+  }
+
+  .register .become-partner {
+    font-size: 0.5rem;
+  }
+
+  .main-nav > ul {
+    gap: 0;
+  }
+
+  .main-nav li a {
+    font-size: 0.5rem;
+  }
+
+  .main-nav li {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .main-nav li.active {
+    background-color: var(--secondary-clr);
+  }
+
+  .main-nav li::after {
+    bottom: 0.5rem;
+    left: 0.5rem;
+    width: calc(100% - 0.9rem);
+  }
+
+  .contact-flex {
+    flex-direction: column;
+  }
+
+  .email-flex {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .contact-flex {
+    margin-top: 2rem;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .input-flex:first-child {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input-flex:first-child div {
+    display: flex;
+    flex-direction: column;
+  }
+}

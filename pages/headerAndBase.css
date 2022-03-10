@@ -43,12 +43,15 @@ h1 {
   font-size: 80px;
   position: relative;
   z-index: 3;
+  font-family: "Montserrat";
 }
 h2 {
   font-size: 40px;
+  font-family: "Montserrat";
 }
 h3 {
   font-size: 30px;
+  font-family: "Montserrat";
 }
 h4 {
   font-size: 20px;
@@ -74,6 +77,10 @@ a,
 button {
   font-family: inherit;
   transition: all 250ms ease-out;
+}
+
+ul {
+  list-style: none;
 }
 
 a:hover,
