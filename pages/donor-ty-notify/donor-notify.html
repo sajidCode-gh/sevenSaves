@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sevenDays | donation</title>
+    <link rel="stylesheet" href="../headerAndBase.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="hero">
+        <div class="hero-content container">
+          <a href="./index.html" class="logo">
+            <img src="../../assets/SEVENSAVESLOGOwht@2x.png" alt="logo" />
+          </a>
+          <h1 class="hero-title">Make a Donation</h1>
+        </div>
+      </div>
+
+      <main class="container">
+        <h2 class="main-title">
+          Your Donation is Going to <span>[Project Name]!</span>
+        </h2>
+        <p class="main-text">
+          Giving $7 per month feeds a child in need, while also contributing to
+          a community project together with your church family. Seven Saves
+          brings the body of Christ together and allows your gifts to be
+          multiplied.
+        </p>
+
+        <div class="donation-form">
+          <h3 class="form-title">Make A Donation</h3>
+          <a href="#" class="account-link">Already Have Account?</a>
+          <h4 class="form-title2">Billing Information</h4>
+          <form action="#">
+            <div class="field-flex">
+              <div class="input-flex">
+                <label for="Address">Address<sup>*</sup></label>
+                <input type="text" required placeholder="Address" name="text" />
+              </div>
+              <div class="input-flex">
+                <label for="city">City<sup>*</sup></label>
+                <input type="text" required placeholder="City" name="city" />
+              </div>
+            </div>
+            <div class="field-flex">
+              <div class="input-flex">
+                <label for="zipcode">Zipcode<sup>*</sup></label>
+                <input
+                  type="number"
+                  required
+                  placeholder="Zipcode"
+                  name="text"
+                />
+              </div>
+              <div class="input-flex">
+                <label for="state">State<sup>*</sup></label>
+                <input
+                  type="text"
+                  required
+                  placeholder="ILLINOIS"
+                  name="text"
+                />
+                <div class="chevrons">
+                  <img
+                    src="../../assets/chevron-up-solid (1).svg"
+                    alt="chevron-down"
+                    class="chevron-down"
+                  />
+                  <img
+                    src="../../assets/chevron-up-solid.svg"
+                    alt="chevron-up"
+                    class="chevron-up"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="field-flex">
+              <div class="input-flex">
+                <label for="Country">Country<sup>*</sup></label>
+                <input type="text" required placeholder="Country" name="text" />
+                <div class="chevrons">
+                  <img
+                    src="../../assets/chevron-up-solid (1).svg"
+                    alt="chevron-down"
+                    class="chevron-down"
+                  />
+                  <img
+                    src="../../assets/chevron-up-solid.svg"
+                    alt="chevron-up"
+                    class="chevron-up"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <hr />
+            <div class="field-flex">
+              <div class="input-flex">
+                <label for="Name On Card">Name On Card<sup>*</sup></label>
+                <input
+                  type="text"
+                  required
+                  placeholder="Name On Card"
+                  name="text"
+                />
+              </div>
+              <div class="input-flex">
+                <label for="Credit Card Number"
+                  >Credit Card Number<sup>*</sup></label
+                >
+                <input
+                  type="text"
+                  required
+                  placeholder="_ _ _ _ - _ _ _ _ - _ _ _ _ - _ _ _ _"
+                  name="city"
+                />
+              </div>
+            </div>
+            <div class="field-flex">
+              <div class="input-flex last-two-fields">
+                <label for="Expiration Date">Expiration Date</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="_ _ / _ _"
+                  name="text"
+                />
+              </div>
+              <div class="input-flex last-two-fields">
+                <label for="Security Code">Security Code</label>
+                <input type="text" required placeholder="_ _ _" name="text" />
+              </div>
+            </div>
+            <hr />
+          </form>
+        </div>
+
+        <div class="donation-info">
+          <h4>Donation Information</h4>
+          <p>
+            Every dollar you give converts to points that go toward your
+            church’s community project. <br />The more you give, the faster your
+            church reaches its goal!
+          </p>
+
+          <p class="points">
+            Your Churches has <span>[X]</span> Points Remaining to Reach its
+            <span>[Y]</span> Goal!
+          </p>
+
+          <form action="#" class="form-points">
+            <label for="donation">Enter Donation Amount<sup>*</sup></label>
+            <div class="points-container">
+              <input
+                type="number"
+                class="amount-donated"
+                placeholder="$00.00"
+              />
+              <div class="points-count">
+                <span class="points-calculated">xxx</span> points
+              </div>
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Submit Donation</button>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-flex container">
+          <div class="footer-logo">
+            <img src="../../assets/Group 382@2x.png" alt="footer-logo" />
+          </div>
+          <ul class="footer-list">
+            <li class="list-item"><a href="#">CONTACT US</a></li>
+            <li class="list-item"><a href="#">FAQS</a></li>
+            <li class="list-item"><a href="#">PRIVACY POLICY</a></li>
+            <li class="list-item"><a href="#">FUNDRAISING DISCLOSURES</a></li>
+            <li class="list-item"><a href="#">SECURITY</a></li>
+          </ul>
+        </div>
+      </footer>
+
+      <div class="ty-notify">
+        <div class="notify-close">
+          <img
+            src="../../assets/Icon ionic-ios-close-circle.svg"
+            alt="close-btn"
+          />
+        </div>
+        <h4>Thank You for Your Donation</h4>
+        <div class="notify-hearts">
+          <img src="../../assets/Icon awesome-heart.png" alt="heart" />
+          <img
+            class="red-heart"
+            src="../../assets/Icon awesome-heart-red.png"
+            alt="heart"
+          />
+        </div>
+        <p>
+          So much good is possible when you put God’s love in motion. Seven
+          Saves is a powerful step forward to make a difference together in
+          fighting extreme poverty in the Caribbean and Latin America.
+        </p>
+
+        <div class="notify-btns">
+          <a href="../donor-ty-notify/donor-notify.html"
+            >Make Another Donation</a
+          >
+          <a href="../donor-dashboard/donar-dashboard.html"
+            >Return to Dashboard</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
